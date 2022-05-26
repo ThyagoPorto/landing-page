@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+        integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Thyago Porto</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="foto perfil.jpg" alt="">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/ThyagoPorto">GITHUB</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:thyagopmelo@hotmail.com">EMAIL</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/thyago-porto-49b867233">LINKEDIN</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="nome">
+                <h1>Thyago Porto</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>
+                    É difícil imaginarmos a vida sem uma série de facilidades que a tecnologia nos trouxe.
+                    Aprender a programar é ter nas mãos o "poder" de melhorar ou facilitar a vida das pessoas, por meio
+                    da criação de softwares e aplicativos
+                    que possam resolver problemas reais da sociedade. Programar, é dar vida às ideias, a universos até
+                    então inexistentes,
+                    a soluções até então impensáveis.
+                </p>
+            </div>
+        </section>
+
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
